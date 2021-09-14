@@ -28,6 +28,14 @@ https://www.themealdb.com/api/json/v1/1/search.php?s={meal}
 
 ```
 
+> Food  Details
+
+```json
+
+https://www.themealdb.com/api/json/v1/1/lookup.php?i={id}
+
+```
+
 ## Technology
 
 - [x] HTML5

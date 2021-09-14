@@ -16,6 +16,7 @@
   --black-color: #383838;
   --white-color: #ffffff;
   --main-color: #f06c4e;
+  --light-color: #f8f7f5;
 }
 
 html {
@@ -111,7 +112,7 @@ nav {
 .meal__search__container {
   width: 100%;
   max-width: 570px;
-  margin: 30px auto 50px;
+  margin: 50px auto;
   display: flex;
   align-items: stretch;
   border-radius: 6px;
@@ -127,12 +128,11 @@ nav {
   width: 24px;
   height: 24px;
   background: url(../icons/search.svg) no-repeat center center / contain;
-  z-index: 1;
 }
 
 #meal__search__input {
   border: 2px solid transparent;
-  background: #f8f7f5;
+  background-color: var(--light-color);
   padding: 18px 18px 18px 50px;
   width: calc(100% - 100px);
 }
@@ -155,4 +155,165 @@ nav {
   cursor: pointer;
   font-size: 14px;
   font-weight: 700;
+}
+
+/* spinner css */
+
+#loading__spinner {
+  display: flex;
+  justify-content: center;
+}
+
+#loading__spinner img {
+  width: 450px;
+  text-align: center;
+  height: 450px;
+  display: flex;
+  margin: 0 auto;
+}
+
+/* meal container css */
+
+#meal__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  overflow: auto;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: var(--light-color);
+  overflow: auto;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.card img:hover {
+  transform: translateX(30deg);
+}
+
+.card h3 {
+  padding: 20px 0;
+  color: var(--black-color);
+  font-weight: 900;
+  font-size: 23px;
+  text-align: center;
+}
+
+/* meal details */
+
+#meal__detail {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+  display: none;
+  position: fixed;
+}
+
+.modal {
+  height: 90vh;
+  width: 600px;
+  margin: 5vh auto;
+  overflow: auto;
+  background-color: var(--light-color);
+  border-radius: 10px;
+}
+
+.modal__image {
+  height: 320px;
+  position: relative;
+}
+
+.modal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#cross__icon {
+  padding: 5px 12px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: var(--main-color);
+  backdrop-filter: blur(10px);
+  font-size: 40px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal__content {
+  padding: 20px;
+}
+
+.modal__content h4:nth-child(1) {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.modal__content h4 {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 800;
+  margin: 20px 0;
+}
+
+.modal__content p {
+  color: var(--black-color);
+  text-align: justify;
+}
+
+.modal__content ul {
+  margin: 20px;
+}
+
+.modal__content ul li {
+  list-style: none;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 18px;
+  color: var(--black-color);
+}
+
+.modal__content ul li::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background: url(../icons/checkmark.svg) no-repeat center center / contain;
+}
+
+.modal::-webkit-scrollbar {
+  background: #f0f0f0;
+  width: 10px;
+  border-radius: 10px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 10px;
+}
+
+.copyright {
+  margin: 50px 0 0 0;
+  float: right;
+  padding-bottom: 20px;
 }
