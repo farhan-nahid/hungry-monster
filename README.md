@@ -1,4 +1,4 @@
-## Monster is Hungry
+## Hungry Monster
 
 ---
 
@@ -8,13 +8,17 @@
 
 ##
 
-<!-- <img src="https://i.ibb.co/7xDvdTK/Random-Buddy.png" alt="Random-Buddy" border="0"> -->
+<img src="https://i.ibb.co/2PhGK0P/Monster-Is-Hungry.png" alt="Monster-Is-Hungry" border="0">
+
+---
+
+<img src="https://i.ibb.co/6b8R9Yt/Monster-Is-Hungry-details.png" alt="Monster-Is-Hungry-details" border="0">
 
 ---
 
 ## Live Link
 
-[Link](https://monster-is-hungry.vercel.app/)
+[Link](https://hungry-monster.vercel.app/)
 
 ---
 
