@@ -2,7 +2,7 @@
 
 ---
 
-> This is a simple landing page. On this website, we can search your favourite food & show it's details.
+> This is a simple landing page. On this website, we can search for your favorite food & show its details.
 
 ---
 
@@ -24,7 +24,7 @@
 
 ```json
 
-https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata
+https://www.themealdb.com/api/json/v1/1/search.php?s={meal}
 
 ```
 

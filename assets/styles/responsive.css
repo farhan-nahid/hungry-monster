@@ -1,0 +1,85 @@
+/*
+
+    =============================
+     navbar responsive css start
+    =============================
+   
+*/
+
+@media only screen and (max-width: 500px) {
+  nav {
+    margin: auto;
+    position: fixed;
+    padding: 5%;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1036;
+  }
+  .menu__button {
+    display: block;
+  }
+
+  #click:checked ~ .menu__button i::before {
+    content: "\f00d";
+  }
+
+  .nav__items {
+    position: fixed;
+    top: 80px;
+    display: block;
+    right: -30%;
+    height: 100vh;
+    width: 30%;
+    z-index: 50;
+    padding-left: 2em;
+    transition: all 0.6s ease-in-out;
+    background-color: #f06c4e;
+  }
+
+  #click:checked ~ .nav__items {
+    right: 0;
+  }
+
+  .nav__items li {
+    margin: 20px 0;
+  }
+
+  .nav__items li a {
+    color: #fff;
+  }
+
+  #banner {
+    padding-top: 120px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .nav__items {
+    padding-left: 1.5em;
+  }
+
+  nav {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .nav__items {
+    padding-left: 1em;
+  }
+}
+
+/*
+
+     ===========================
+      navbar responsive css end
+     =========================== 
+     
+*/
+
+@media only screen and (max-width: 1150px) {
+  .container {
+    width: 90%;
+  }
+}
