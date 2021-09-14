@@ -30,9 +30,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* ====================
+/*
+
+    ====================
      navbar css start
-   ==================== */
+    ==================== 
+    
+*/
 
 header {
   margin: 10px 0;
@@ -90,10 +94,65 @@ nav {
   display: none;
 }
 
-/* ====================
+/*
+
+    ====================
        navbar css end
-     ==================== */
+    ==================== 
+
+*/
 
 .container {
   width: 1100px;
+  margin: 0 auto;
+}
+
+/* Meal Search Box */
+.meal__search__container {
+  width: 100%;
+  max-width: 570px;
+  margin: 30px auto 50px;
+  display: flex;
+  align-items: stretch;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+.meal__search__container::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 15px;
+  width: 24px;
+  height: 24px;
+  background: url(../icons/search.svg) no-repeat center center / contain;
+  z-index: 1;
+}
+
+#meal__search__input {
+  border: 2px solid transparent;
+  background: #f8f7f5;
+  padding: 18px 18px 18px 50px;
+  width: calc(100% - 100px);
+}
+
+#meal__search__input::placeholder {
+  color: #989898;
+}
+
+#meal__search__input:focus {
+  outline: 0;
+  border: 2px solid var(--main-color);
+}
+
+#meal__search__button {
+  background-color: var(--main-color);
+  border: 0;
+  color: var(--white-color);
+  padding: 15px 20px;
+  width: 100px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
 }
